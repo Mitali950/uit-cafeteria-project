@@ -1,0 +1,494 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    overflow-x: hidden;
+    height: 100vh;
+    
+}
+.container .circle {
+    background-color: #75dd06;
+    position: absolute;
+    width: 97%;
+    height: 120%;
+
+    margin-top: 65px;
+    clip-path: circle(370px at right top);
+}
+.hero {
+    
+    display: flex;
+    align-items: center;
+    width: 98%;
+    margin-left: 50px;
+   
+}
+
+.imgg img {
+    width: 390px;
+     height: 392px;
+}
+.hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.content h3 {
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.581);
+    color: white;
+    padding: .5rem 1rem;  /*ye padding h3 mai di so that uske blck color kai box mai vo acha dikhe content*/
+    letter-spacing: .3rem;
+}
+.content h1{
+    font-size: 1.8rem;
+    font-weight: 650;
+    margin-top: 1.5rem;
+    letter-spacing: .1rem;
+}
+.content span {
+    background-color: #75dd06;
+    padding: .2rem 1rem;
+    
+    color: rgb(219, 8, 8);
+    
+}
+.content p {
+    font-size: 1.1rem;
+    color: black;
+    margin: 1rem 0rem;  /*ye margin diya p tag or h1 tag kai bich mai,do text kai bih mai*/
+    line-height: 2rem;  /*do lines kai bich mai line height di*/
+    max-width: 33rem;
+
+}
+.content button{
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5rem;
+    background-color: #75dd06;
+    color: rgb(219, 8, 8);
+    padding: 1rem 2rem;
+    letter-spacing: .1rem;
+}
+.content button:hover {
+    background-color: #66c00c;
+    cursor: pointer;
+    border: 2px solid rgb(85, 82, 82);
+}
+
+
+/*about us section*/
+
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+
+    margin-left: 80px;
+    margin-top: 70px;
+}
+.about-img img{
+    width: 100%;
+    height: auto;
+}
+.about-text h2 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-left: -4px; /*green color ka background kam ya jada hoga ise*/
+    margin-right: 20px;
+    margin-bottom: 0.1rem;
+    background-color: #75dd06;
+    color:rgb(219, 8, 8);
+    font-weight: 700;
+    padding: .1rem .1rem;
+    text-align: center;
+    
+}
+.about-text p {
+    color: black;
+    line-height: 30px;
+    margin: 1rem 1rem;  /*ye margin diya p tag or h1 tag kai bich mai,do text kai bih mai*/
+    max-width: 48rem;
+}
+
+.alone h1 {
+    text-align: center;
+    color:rgb(219, 8, 8);
+    font-weight: 700;
+    letter-spacing: .1rem;
+    margin-top: 120px;
+}
+.about-text button {
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5rem;
+    background-color: #75dd06;
+    color: rgb(219, 8, 8);
+    padding: .5rem .8rem;
+    letter-spacing: 0rem;
+}
+.about-text button:hover {
+    background-color: #66c00c;
+    cursor: pointer;
+    border: 2px solid rgb(85, 82, 82);
+}
+
+
+/*menu section*/
+
+
+.middle-text h1 {
+    text-align: center;
+    color:rgb(219, 8, 8);
+    font-weight: 700;
+    letter-spacing: 0.30rem;
+    margin-top: 120px;
+}
+
+
+
+.shop-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+    gap: 2.5rem;
+    align-items: center;
+    margin-top: 4rem;
+    margin-left: 98px;
+    margin-right: 90px;
+}
+
+.row {
+    position: relative;
+    padding: 10px 35px 40px;
+    background-color: rgb(233, 228, 228);
+    border-radius: 3rem;
+    
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    transition: transform .50s ease;
+    cursor: pointer;
+}
+
+.row h3 {
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.row p{
+    color:rgba(0, 0, 0, 0.581);
+    font-size: 1rem;
+    line-height: 18px;
+    margin-bottom: 1.1rem;
+}
+.in-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.in-text .price h6 {
+  font-size: 17px;
+  color: black;
+  font-weight: 500;
+}
+
+.in-text .s-btnn button{
+    
+    margin-right: -26px;
+}
+
+.s-btnn button {
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 5rem;
+    background-color: #75dd06;
+    color: rgb(219, 8, 8);
+    padding: .5rem .8rem;
+    letter-spacing: 0rem;
+    
+}
+.s-btnn button:hover {
+    background-color: #66c00c;
+    cursor: pointer;
+    border: 2px solid rgb(85, 82, 82);
+}
+.top-icon {
+    position: absolute;
+    top: 30px;
+    left: 2px;
+
+}
+.top-icon i{
+    font-size: 22px;
+    color: #66c00c;
+
+
+}
+
+
+/*last footer part styling*/
+
+.contact-text h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(219, 8, 8);
+    font-weight: 700;
+    letter-spacing: 0.10rem;
+    margin-top: 90px;
+}
+.contact-text p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    color: black;
+   
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #66c00c;
+    letter-spacing: .4rem;
+}
+
+.social .clr i{
+    color:#66c00c;
+}
+.social i:hover {
+    color:#e72e09;
+}
+
+
+
+/*media queries*/
+
+@media screen and (max-width: 1200px){
+    .hero {
+        width: 88%;
+        margin-top: 49px;
+    }
+   
+}
+@media screen and (max-width: 1020px){
+    .hero {
+        width: 83%;
+    }
+    .imgg img {
+        height: 24rem;
+    }
+    .content h3 {
+        font-size: 1rem;
+    }
+    .content h1 {
+        font-size: 16px;
+    }
+    .content p {
+        font-size: 1rem;
+    }
+    .content button {
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .about-img {
+        align-items: center;
+    }
+}
+@media screen and (max-width: 900px){
+    .hero {
+        width: 82%;
+        margin-left: 10px;
+    }
+    .imgg img {
+        height: 260px;
+        width: 260px;
+    }
+    .alone h1 {
+        font-size: 3rem;
+    }
+    .about {
+        grid-template-columns: 1fr;
+        margin-top: 45px;
+        margin-left: 6.5px;
+        padding: 0.10rem 6rem;
+        
+        
+    }
+    .menu h1{
+        font-size: 3rem;
+        margin-top: 50px;
+    }
+    .about-img {
+        align-items: center;
+        margin-top: -10px;
+    }
+
+
+    .content h3 {
+        font-size: 15px;
+    }
+    .content h1 {
+        font-size: 16px;
+    }
+    .content p {
+        font-size: 15px;
+    }
+    
+    .content button {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    .container .circle {
+        
+    width: 88.7%;
+    height: 90%;
+        margin-top: 1px;
+        clip-path: circle(300px at right top);
+    }
+
+    .contact-text h1 {
+        font-size: 3rem;
+        
+    }
+    .contact-text p {
+        font-size: 1.1rem;
+        padding: 20px;
+        margin-top: 7px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    .container .circle {
+        
+        width: 95.3%;
+        height: 90%;
+            margin-top: 1px;
+            clip-path: circle(260px at right top);
+        }
+        .about {
+            grid-template-columns: 1fr;
+            margin-top: 12px;
+        margin-left: 6.5px;
+        padding: 0.10rem 6rem;
+        }
+        .about-img {
+            align-items: center;
+        }
+        .menu h1{
+            font-size: 3rem;
+            margin-top: 50px;
+        }
+        .contact-text h1 {
+            font-size: 3rem;
+        }
+        .contact-text p {
+            font-size: 0.85rem;
+            padding: 20px;
+        margin-top: 7px;
+        }
+}
+
+
+
+@media screen and (max-width: 400px){
+    
+    .container .circle {
+        width: 97%;
+        height: 90%;
+            margin-top: 1px;
+        
+            clip-path: circle(230px at right top);
+        }
+        .imgg img {
+            height: 200px;
+            width: 200px;
+            margin-top: 70px;
+            margin-left: 17px;
+        }
+        .content h3{
+            font-size: 12px;
+            margin-top: -18px;
+            padding: 1rem .6rem;  
+    letter-spacing: .1rem;
+    font-weight: 650;
+        }
+        .content h1{
+    font-size: 1.5rem;
+    font-weight: 650;
+    margin-top: 1rem;
+    letter-spacing: .1rem;
+    padding: .2rem .1rem;
+    align-items: center;
+    line-height: 2rem;
+}
+.content span {
+   
+    padding: .1rem 1rem;
+    line-height: 1.5rem;
+    
+}
+.content p {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+    .content button {
+        padding: .7rem 1.2rem;
+        font-size: .9rem;
+    }
+    .about {
+        grid-template-columns: 1fr;/*ise text or photo line mai niche ko agyi hai*/
+        margin-top: 20px;
+        margin-left: 6.5px;
+        padding: 1rem 1rem;
+    }
+    .about-img {
+        align-items: center;
+    }
+    .alone h1 {
+        margin-top: 50px;
+        font-size: 2rem;
+    }
+    .menu h1{
+        font-size: 3rem;
+        margin-top: 40px;
+    }
+    .shop-content{
+        margin-top: 30px;
+    }
+    .contact-text h1 {
+        font-size: 2rem;
+    }
+    .contact-text p {
+        font-size: 0.75rem;
+        letter-spacing: .1rem;
+        line-height: 1.5rem;
+        padding: 20px;
+        margin-top: 7px;
+        
+        
+    }
+}
+
